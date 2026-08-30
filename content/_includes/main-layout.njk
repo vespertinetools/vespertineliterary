@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en-US">
+    <head>
+        <link rel="icon" type="image/x-icon" href="{{nesting}}assets/icon"> 
+        <!--cachebusting-->
+<script src="nocache.js{{ nocache }}"></script>
+        <link rel="stylesheet" href="{{nesting}}css/styles.css{{ nocache }}" />
+        <!--cachebusting over-->
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Vespertine Literary</title>
+    </head>
+
+  <body>
+        <div id="content"> 
+<div id="header-container">
+  <header id="header" style="line-height: 1em">
+       Vespertine Literary
+        </header> 
+        
+        <div id="header-grid">
+        <nav id="navbar" class=navbar>
+            <a href="{{nesting}}index.html">Home</a>
+            <a href="{{nesting}}issues/issues.html">Issues</a>
+            <a href="{{nesting}}submit.html">Submit</a>
+            <a href="{{nesting}}about_us.html">About Us</a>
+            <div>Shop</div>
+        </nav>
+    </div>
+</div>
+
+    <br>
+        <div id="content-grid">
+              
+        {{ content | safe }}
+          
+        </div>
+    <p class="center-align">© Vespertine Literary 2026</p>
+        </div>
+    </body>
+    </html>
